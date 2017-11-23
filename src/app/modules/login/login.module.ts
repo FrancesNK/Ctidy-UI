@@ -1,6 +1,8 @@
+import { LoginComponent } from './../../components/login/login.component';
+import { RegisterComponent } from './../../components/register/register.component';
+import { AppRoutingModule } from './../routing/app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { routing } from '../routing/app.routing';
 
 
 import { LoginComponent } from '../../components/login/login.component';
@@ -8,15 +10,14 @@ import { LoginComponent } from '../../components/login/login.component';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    AppRoutingModule
   ],
   providers: []
 })
 
-export class LoginModule {
-
-}
+export class LoginModule {}

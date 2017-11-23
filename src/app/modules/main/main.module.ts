@@ -1,4 +1,5 @@
-import { AppRoutingModule } from './../routing/app.routing';
+import { MainComponent } from './../../components/main/main.component';
+import { AppRoutingModule } from './../../modules/routing/app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './../../components/login/login.component';
 import { NgModule } from '@angular/core';
@@ -12,8 +13,10 @@ import { RegisterComponent } from '../../components/register/register.component'
   ],
   declarations: [
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    MainComponent
   ],
-  providers: []
+  providers: [],
+  bootstrap: [MainComponent]
 })
-export class RegisterModule { }
+export class MainModule { }
