@@ -1,0 +1,133 @@
+@import '../../../theme-default.less';
+
+.login-component {
+    min-width: 1040px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.login-container {
+    width: 1040px;
+    top: 50%;
+    left: 50%;
+    margin: -490px 0 0 -470px;
+    position: absolute;
+}
+
+.login-box {
+    width: 352px;
+    padding: 58px 56px 58px 51px;
+    background-color: #fff;
+    float: right;
+    position: relative;
+    margin-top: 44px;
+}
+
+.mainTtile {
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    height: 65px;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.general-form {
+    margin-top: 34px;
+    max-width: 600px;
+    position: relative;
+}
+
+.form-group {
+    font-family: @default-font-family;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.input-group {
+    display: block;
+    height: 40px;
+    position: relative;
+    border-collapse: separate;
+    font-size: 14px;
+}
+
+.control-label {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 400;
+    line-height: 25px;
+    vertical-align: middle;
+    max-width: 100%;
+    margin-bottom: 5px;
+    position: absolute;
+}
+
+
+.form-control {
+    text-indent: 40px;
+    width: 324px;
+    height: 28px;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #d3d3d3;
+    padding: 6px 12px;
+    border: 1px solid @border-default;
+}
+
+.input-group-addon {
+    position: absolute;
+    left: 1px;
+    z-index: 20;
+    width: 13px;
+    height: 29px;
+    line-height: 22px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid @border-default;
+    padding: 6px 12px;
+}
+
+.button-component {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: @button-primary;
+    width: 100%;
+    color: @white;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    min-width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 38px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-size: 16px;
+
+    &:hover {
+        background-color:  @button-primary-border;
+    }
+}
+
+.forget-password {
+    color:  @button-primary;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.register {
+    color: @button-primary;
+    display: block;
+    text-align: center;
+    padding: 18px 0 70px;
+}
