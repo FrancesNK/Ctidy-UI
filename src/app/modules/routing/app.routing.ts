@@ -2,6 +2,7 @@ import { LoginComponent } from './../../components/login/login.component';
 import { NgModule } from '@angular/core';
 import { RegisterComponent } from '../../components/register/register.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserComponent } from '../../components/user/user.component';
 
 const appRoutes: Routes = [
     {
@@ -18,9 +19,13 @@ const appRoutes: Routes = [
         component: LoginComponent
     },
     {
+        path: 'user',
+        component: UserComponent
+    },
+    {
         path: '**',
         redirectTo: '/register'
-    }
+    },
 ];
 
 @NgModule({

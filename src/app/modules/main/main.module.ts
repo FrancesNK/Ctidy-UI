@@ -1,3 +1,4 @@
+import { UserComponent } from './../../components/user/user.component';
 import { MainComponent } from './../../components/main/main.component';
 import { AppRoutingModule } from './../../modules/routing/app.routing';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +15,7 @@ import { RegisterComponent } from '../../components/register/register.component'
   declarations: [
     RegisterComponent,
     LoginComponent,
+    UserComponent,
     MainComponent
   ],
   providers: [],

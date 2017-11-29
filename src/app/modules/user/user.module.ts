@@ -3,13 +3,14 @@ import { RegisterComponent } from './../../components/register/register.componen
 import { AppRoutingModule } from './../routing/app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UserComponent } from './../../components/user/user.component';
 
 
-
-/*@NgModule({
+@NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -18,4 +19,4 @@ import { NgModule } from '@angular/core';
   providers: []
 })
 
-export class LoginModule {}*/
+export class UserModule {}
