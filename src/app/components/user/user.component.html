@@ -1,5 +1,23 @@
-<div class="user-component"> start coding
+<div class="user-component"> 
     <div class="user-block">
-        <div class="user-top" style="background-image: url();"></div>
+        <div class="user-top"></div>
+        <div class="user-head">
+            <span class="user-avatar">
+                <img class="gender-img" src="../../../assets/images/female.png">
+            </span>
+        </div>
+        <div class="user-info">
+            <div class="user-name">{{username}}</div>
+            <div class="user-city">
+                <span *ngFor="let item of usercity"> {{item}} </span>
+            </div>
+        </div>
+        <div class="user-data">
+            <div class="followed-data">
+                <div class="number">{{followed}}</div>
+                <div class="desc">粉丝</div>
+            </div>
+        </div>
+        <div class="divider"></div>
     </div>
 </div>

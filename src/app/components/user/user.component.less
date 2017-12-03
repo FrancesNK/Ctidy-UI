@@ -1,3 +1,13 @@
+@import '../../../theme-default.less';
+
+.img {
+    border:0;
+}
+
+.user-component {
+    font-family: @default-font-family;
+}
+
 .user-block {
     margin: 0 auto;
     width: 768px;
@@ -6,8 +16,60 @@
 .user-top {
     height: 130px; 
     display: block;
-    background-color:black;
+    background-color: @button-primary;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.user-head {
+    position: relative;
+    min-height: 64px;
+}
+
+.user-avatar {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 22px;
+    top: -26px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.gender-img {
+    border-radius: 50%;
+    width: 19px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.user-info {
+    display: block;
+    clear: both;
+    padding: 25px 14px 0;
+    position: relative;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.user-city {
+    font-size: 12px;
+    line-height:16.5px;
+    color: @hint-gray;
+    margin-bottom: 30px;
+}
+
+.divider {
+    min-height: 12px;
+    width: 100%;
+    background-color: @divider;
 }
