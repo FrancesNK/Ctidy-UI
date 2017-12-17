@@ -1,3 +1,4 @@
+import { UserInfoService } from './../../services/user-info/user-info.service';
 import { UserComponent } from './../../components/user/user.component';
 import { MainComponent } from './../../components/main/main.component';
 import { AppRoutingModule } from './../../modules/routing/app.routing';
@@ -18,7 +19,7 @@ import { RegisterComponent } from '../../components/register/register.component'
     UserComponent,
     MainComponent
   ],
-  providers: [],
+  providers: [UserInfoService],
   bootstrap: [MainComponent]
 })
 export class MainModule { }
