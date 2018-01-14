@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RegisterComponent } from '../../components/register/register.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from '../../components/user/user.component';
+import { GraduateComponent } from '../../components/graduate/graduate.component';
 
 const appRoutes: Routes = [
     {
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
         path: 'user',
         component: UserComponent
     },
+    {
+        path: 'graduate',
+        component: GraduateComponent
+    }
     {
         path: '**',
         redirectTo: '/register'

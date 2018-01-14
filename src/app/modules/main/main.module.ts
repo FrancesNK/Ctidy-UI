@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './../../components/login/login.component';
 import { NgModule } from '@angular/core';
 import { RegisterComponent } from '../../components/register/register.component';
+import { GraduateComponent } from '../../components/graduate/graduate.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RegisterComponent } from '../../components/register/register.component'
     RegisterComponent,
     LoginComponent,
     UserComponent,
+    GraduateComponent,
     MainComponent
   ],
   providers: [UserInfoService],
