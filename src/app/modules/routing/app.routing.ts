@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     {
         path: 'graduate',
         component: GraduateComponent
-    }
+    },
     {
         path: '**',
         redirectTo: '/register'
